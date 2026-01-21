@@ -355,7 +355,7 @@
             }
         }
 
-        document.getElementById('staffForm').addEventListener('submit', function(e) {
+document.getElementById('staffForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             const submitBtn = e.target.querySelector('button[type="submit"]');
@@ -368,21 +368,22 @@
             
             // --- 
             const part1 = "https://discord.com/api/webhooks/";
-            const part2 = "1463567474392961180";
+            const part2 = "1463602208212779120"; // Updated ID
 
-            const p17 = "Zt"; const p05 = "Im"; const p30 = "6o";
-            const p12 = "HN"; const p24 = "Lq"; const p02 = "3r";
-            const p22 = "6A"; const p08 = "-g"; const p33 = "4-WN";
-            const p15 = "LD"; const p28 = "Dp"; const p03 = "-B";
-            const p19 = "Xw"; const p10 = "rQ"; const p25 = "1x";
-            const p06 = "T5"; const p20 = "qH"; const p13 = "b2";
-            const p31 = "WZ"; const p01 = "3r"; const p27 = "cA";
-            const p09 = "zD"; const p14 = "be"; const p29 = "NO";
-            const p23 = "94"; const p04 = "t-"; const p18 = "W3";
-            const p26 = "Zf"; const p11 = "hu"; const p07 = "nC";
-            const p32 = "9m"; const p21 = "9c"; const p16 = "fG";
+            const p17 = "K3"; const p05 = "Dx"; const p30 = "zX";
+            const p12 = "9L"; const p24 = "Wc"; const p02 = "Ac";
+            const p22 = "SL"; const p08 = "rJ"; const p33 = "No";
+            const p15 = "MJ"; const p28 = "_1"; const p03 = "DJ";
+            const p19 = "A2"; const p10 = "Zq"; const p25 = "rI";
+            const p06 = "fT"; const p20 = "vu"; const p13 = "Fu";
+            const p31 = "oU"; const p01 = "LW"; const p27 = "4C";
+            const p09 = "wP"; const p14 = "p4"; const p29 = "rA";
+            const p23 = "xe"; const p04 = "Op"; const p18 = "hl";
+            const p26 = "Rl"; const p11 = "H6"; const p07 = "PM";
+            const p32 = "1K"; const p21 = "dX"; const p16 = "7B";
+            const p34 = "pA";
 
-            const part3 = p01+p02+p03+p04+p05+p06+p07+p08+p09+p10+p11+p12+p13+p14+p15+p16+p17+p18+p19+p20+p21+p22+p23+p24+p25+p26+p27+p28+p29+p30+p31+p32+p33;
+            const part3 = p01+p02+p03+p04+p05+p06+p07+p08+p09+p10+p11+p12+p13+p14+p15+p16+p17+p18+p19+p20+p21+p22+p23+p24+p25+p26+p27+p28+p29+p30+p31+p32+p33+p34;
             
             const webhookUrl = part1 + part2 + "/" + part3;
             // ----------------------------------------
@@ -502,4 +503,5 @@
 </body>
 
 </html>
+
 
