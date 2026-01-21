@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50xCreative - Applications Closed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --mc-bg: #18181b;
+            --mc-btn-bg: #7d7d7d;
+            --mc-btn-light: #c6c6c6;
+            --mc-btn-dark: #3b3b3b;
+            --mc-text-shadow: 2px 2px 0px #3f3f3f;
+            --mc-green: #55aa55;
+            --mc-red: #aa0000;
+        }
+
+        body {
+            font-family: 'VT323', monospace;
+            color: white;
+            font-size: 1.25rem;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center; /* Center vertically since content is shorter */
+        }
+
+        /* BLURRED BACKGROUND IMAGE */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -20px; 
+            left: -20px; 
+            right: -20px; 
+            bottom: -20px;
+            z-index: -1;
+            
+            /* YOUR UPLOADED IMAGE HERE */
+            background-image: url('fe30a072a38e1c83abca8ad0987d40cb054da8bdb684d8b59562e07aaceb1e84.avif');
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* BLUR EFFECT */
+            filter: blur(8px) brightness(0.6); 
+        }
+
+        /* Minecraft Button Style */
+        .mc-btn {
+            background-color: var(--mc-btn-bg);
+            border: 4px solid;
+            border-color: var(--mc-btn-light) var(--mc-btn-dark) var(--mc-btn-dark) var(--mc-btn-light);
+            color: #ffffff;
+            text-shadow: 2px 2px #202020;
+            cursor: pointer;
+            transition: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .mc-btn:active {
+            border-color: var(--mc-btn-dark) var(--mc-btn-light) var(--mc-btn-light) var(--mc-btn-dark);
+            transform: translateY(2px);
+        }
+
+        .mc-btn:hover {
+            background-color: #8b8b8b;
+        }
+
+        .mc-panel {
+            background-color: #c6c6c6;
+            border: 4px solid #000;
+            box-shadow: inset -4px -4px #555555, inset 4px 4px #ffffff;
+            color: #202020;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 flex justify-center">
+
+    <div class="max-w-3xl w-full relative">
+        
+        <!-- Header / Logo Area -->
+        <div class="text-center mb-8">
+            <h1 class="text-6xl md:text-8xl mb-2" style="text-shadow: 4px 4px 0px #000;">
+                <span style="color: #aa00aa;">50x</span><span style="color: #aaaaaa;">Creative</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-gray-300" style="text-shadow: 2px 2px 0px #000;">Official Staff Application</h2>
+        </div>
+
+        <div class="mc-panel p-8 md:p-16 text-center">
+            
+            <!-- Barrier Icon (using unicode or could be an image) -->
+            <div class="text-8xl mb-6 select-none">⛔</div>
+
+            <h2 class="text-5xl md:text-6xl text-[#aa0000] mb-6 font-bold" style="text-shadow: 2px 2px 0px #000;">APPLICATIONS CLOSED</h2>
+            
+            <div class="space-y-4 text-2xl md:text-3xl mb-10">
+                <p>We are not currently accepting new staff members.</p>
+                <p class="text-gray-600 text-xl md:text-2xl">
+                    Thank you for your interest in joining the 50xCreative team.<br>
+                    Please check back later or watch our Discord for announcements regarding future recruitment cycles.
+                </p>
+            </div>
+
+            <div class="border-t-2 border-gray-500 pt-8">
+                <!-- You can replace '#' with your actual Discord invite link -->
+                <a href="https://discord.gg/qw2CG6Cptt" target="_blank">
+                    <button class="mc-btn px-10 py-4 text-3xl w-full md:w-auto">JOIN OUR DISCORD</button>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8 text-gray-500 text-lg">
+            <p>&copy; 2026 50xCreative & EverXstudios</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
